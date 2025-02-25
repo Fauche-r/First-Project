@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: rgb(0, 129, 167);
+    color: white;
+}
+.content{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    border: 1px solid black; 
+    width: 50%; 
+}
+
+.julienPage{
+    background-color: rgb(255, 221, 210) ;
+    flex : 30%;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+.finnPage{
+    background-color: rgb(255, 221, 210) ;
+    flex : 30%;
+    justify-content: space-between;
+    margin: 10px;
+}
+@media screen and (max-width: 700px) {
+
+    .content{
+        flex-direction: column;
+    }
+}
