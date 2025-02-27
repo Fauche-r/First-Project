@@ -9,21 +9,63 @@ body {
     background: rgb(0, 129, 167);
     color: white;
 }
-.content{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 20px; 
-    border: 1px solid black; 
-    width: 50%; 
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    border: 1px solid black;
+    width: 50%;
 }
 
 @media screen and (max-width: 700px) {
 
-    .content{
+    .content {
         flex-direction: row;
     }
 }
 
-.flexboxcontainer{
-    display: flex
+/* Outer container */
+.container {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #f0f0f0;
+    /* Just for visibility */
+    justify-content: space-between;
+    margin: 20 px;
+    flex-direction: row;
+}
+
+/* Inner container */
+.inner-container {
+    display: flex;
+    /* Arrange children side by side */
+    justify-content: space-between;
+    /* Space out divs */
+    width: 100%;
+    /* Full width */
+    max-width: 100%;
+    /* Optional: limit max width */
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: row;
+
+}
+
+@media (max-width: 400px) {
+    .inner-container {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        align-items: normal;
+
+    }
 }
