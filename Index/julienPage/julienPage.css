@@ -1,0 +1,13 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: rgb(0, 129, 167);
+    color: white;
+}
+.julienFooter{
+
+    flex : 50%;
+     
+    margin: 10px;
+
+}

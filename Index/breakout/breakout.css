@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: rgb(0, 129, 167);
+    color: white;
+}
+
+/* Outer container */
+.container {
+    display: flex;
+    background-color: #f0f0f0;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+
+@media (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
